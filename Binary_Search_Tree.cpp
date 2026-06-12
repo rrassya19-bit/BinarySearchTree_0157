@@ -24,7 +24,7 @@ public:
         ROOT = nullptr;
     }
 
-    void insert(string element)
+    void insert(string element) 
     {
         Node* newNode = new Node(element, nullptr, nullptr);
         newNode->info = element;
@@ -39,6 +39,16 @@ public:
         {
             ROOT = newNode;
             return;
+        }
+
+        if (element < parent->info)
+        {
+            parent->leftChild = newNode;
+        }
+
+        else if (element > parent->info)
+        {
+            parent->rightChild = newNode;
         }
     }
 
