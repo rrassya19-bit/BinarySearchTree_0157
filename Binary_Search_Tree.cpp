@@ -100,4 +100,8 @@ public:
             preorder(ptr->rightChild);
         }
     }
+
+     void postorder(Node *ptr)
+    {
+    }
 };
