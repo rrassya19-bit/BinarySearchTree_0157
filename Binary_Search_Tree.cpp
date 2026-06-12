@@ -30,6 +30,16 @@ public:
         newNode->info = element;
         newNode->leftChild = nullptr;
         newNode->rightChild = nullptr;
+
+        Node* parent = nullptr;
+        Node* currentNode = nullptr;
+        search(element, parent, currentNode);
+
+        if (parent == NULL)
+        {
+            ROOT = newNode;
+            return;
+        }
     }
 
     void search(string element, Node *&parent, Node *&currentNode)
