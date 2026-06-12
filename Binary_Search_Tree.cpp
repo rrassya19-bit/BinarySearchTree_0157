@@ -26,6 +26,10 @@ public:
 
     void insert(string element)
     {
+        Node* newNode = new Node(element, nullptr, nullptr);
+        newNode->info = element;
+        newNode->leftChild = nullptr;
+        newNode->rightChild = nullptr;
     }
 
     void search(string element, Node *&parent, Node *&currentNode)
