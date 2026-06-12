@@ -24,6 +24,10 @@ public:
         ROOT = nullptr;
     }
 
+    void insert(string element)
+    {
+    }
+
     void search(string element, Node *&parent, Node *&currentNode)
     {
         currentNode = ROOT;
