@@ -84,4 +84,8 @@ public:
             inorder(ptr->rightChild);
         }
     }
+
+    void preorder(Node *ptr)
+    {
+    }
 };
