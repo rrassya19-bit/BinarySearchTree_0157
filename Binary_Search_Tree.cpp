@@ -23,4 +23,8 @@ public:
     {
         ROOT = nullptr;
     }
+
+    void search(string element, Node *&parent, Node *&currentNode)
+    {
+    }
 };
